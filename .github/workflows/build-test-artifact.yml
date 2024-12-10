@@ -1,1 +1,9 @@
 name: Build, Test, and Create Artifact
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
