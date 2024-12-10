@@ -7,3 +7,12 @@ on:
   pull_request:
     branches:
       - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the code
+    - name: Checkout Code
+      uses: actions/checkout@v3
